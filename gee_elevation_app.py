@@ -28,11 +28,11 @@ st.write("")
 try:
     ee.Initialize()
     
-except:
+except ee.EEException as e:
     try:
         ee.Authenticate(auth_mode="appdefault")
         ee.Initialize()
-    except:
+    except ee.EEException as e:
         try:
             ee.Authenticate(auth_mode="gcloud")
             ee.Initialize()
