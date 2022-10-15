@@ -1,0 +1,5 @@
+streamlit
+geemap
+requests
+pandas
+bs4
