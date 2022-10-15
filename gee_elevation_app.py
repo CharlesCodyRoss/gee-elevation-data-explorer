@@ -25,8 +25,6 @@ st.write("")
 st.write("")
 
 #AUTHENTICATE THE GEE CREDENTIALS AND INITIALIZE
-ee.Authenticate(auth_mode = "appdefault")
-ee.Initialize()
 
 
 #LOAD EXISITNG COMMAND DATASET
