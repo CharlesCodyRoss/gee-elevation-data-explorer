@@ -25,16 +25,9 @@ st.write("")
 st.write("")
 
 #AUTHENTICATE THE GEE CREDENTIALS AND INITIALIZE
-try:
-    ee.Initialize()
-    
-except ee.EEException as e:
-    try:
-        ee.Authenticate(auth_mode="gcloud")
-        ee.Initialize()
-        
-    except:
-        print("Google Earth Engine Credentials Not Verified")
+
+ee.Authenticate(auth_mode="gcloud")
+ee.Initialize()
 
 
 #LOAD EXISITNG COMMAND DATASET
