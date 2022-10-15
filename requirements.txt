@@ -1,5 +1,6 @@
 streamlit
 gcloud
+earthengine-api
 geemap
 requests
 pandas

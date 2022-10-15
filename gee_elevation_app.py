@@ -26,7 +26,6 @@ st.write("")
 
 #AUTHENTICATE THE GEE CREDENTIALS AND INITIALIZE
 
-ee.Authenticate(auth_mode="gcloud")
 ee.Initialize()
 
 
