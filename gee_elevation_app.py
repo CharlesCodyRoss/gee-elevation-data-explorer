@@ -30,15 +30,11 @@ try:
     
 except ee.EEException as e:
     try:
-        ee.Authenticate(auth_mode="appdefault")
+        ee.Authenticate(auth_mode="gcloud")
         ee.Initialize()
-    except ee.EEException as e:
-        try:
-            ee.Authenticate(auth_mode="gcloud")
-            ee.Initialize()
-            
-        except:
-            print("Google Earth Engine Credentials Not Verified")
+        
+    except:
+        print("Google Earth Engine Credentials Not Verified")
 
 
 #LOAD EXISITNG COMMAND DATASET
