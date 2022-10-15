@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run gee_elevation_app.py
