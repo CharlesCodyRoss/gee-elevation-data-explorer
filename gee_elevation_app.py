@@ -13,14 +13,14 @@ from dataset_search import display_description
 #TITLE AND OPENING MESSAGE
 st.title("Google Earth Engine Elevation Dataset Explorer")
 
-opening_message = ("""
+with st.expander("About"):
+   opening_message = ("""
              <p style="font-size:22px">Welcome to the Google Earth Engine Elevation Data Explorer.  This application will allow you
              to easily browse the eleavation datasets provided by the Google Earth Engine Catalog and download elevation
              files from your desired locations.  Select a dataset from the drop down menu, select your desired area from
              the map, and download your file.</p>
              """)
-
-st.markdown(opening_message, unsafe_allow_html=True)
+   st.markdown(opening_message, unsafe_allow_html=True)
 
 st.write("")
 st.write("")
