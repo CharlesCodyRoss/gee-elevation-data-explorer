@@ -7,8 +7,8 @@ import json
 from dataset_info import elevation_database_load
 from dataset_search import display_description
 
+st.set_page_config(layout="wide")
 
-#INTIALIZE GOOGLE EARTH ENGINE
 
 #TITLE AND OPENING MESSAGE
 st.title("Google Earth Engine Elevation Dataset Explorer")
@@ -21,10 +21,6 @@ with st.expander("About"):
              the map, and download your file.</p>
              """)
    st.markdown(opening_message, unsafe_allow_html=True)
-
-st.write("")
-st.write("")
-
 
 #AUTHENTICATE THE GEE CREDENTIALS AND INITIALIZE
 json_data = st.secrets["json_data"]
