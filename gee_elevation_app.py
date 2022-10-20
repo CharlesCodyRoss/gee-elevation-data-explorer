@@ -95,7 +95,7 @@ if dataset_selection != 'Select Elevation Dataset':
     for itr in range(len(commands)):
         exec(commands[itr])
      
-    Map.to_streamlit(height = 500)
+    Map.to_streamlit()
     
     
     
@@ -103,6 +103,6 @@ if dataset_selection != 'Select Elevation Dataset':
 elif dataset_selection == 'Select Elevation Dataset':
     #INITIALIZE MAP
     Map = geemap.Map(Draw_export=True)
-    Map.to_streamlit(height = 500)
+    Map.to_streamlit()
         
     
